@@ -5,9 +5,11 @@ set wildignore+=*/tmp/*,*.so,*.swp,*.zip     " MacOSX/Linux
 let g:ctrlp_max_files=0
 let g:ctrlp_max_depth=40
 
+let g:syntastic_javascript_checkers = ['eslint']
+
 " \v[\/](\.git|node_modules|\.sass-cache|bower_components|build)$
 " Sane Ignore For ctrlp
 let g:ctrlp_custom_ignore = {
-  \ 'dir': '\v[\/](\.git|node_modules|vendor|public)$',
+  \ 'dir': '\v[\/](\.git|node_modules|vendor)$',
   \ 'file': '\.log$\',
   \ }
